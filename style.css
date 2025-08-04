@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-image: url();
+}
+
+body {
+    display: grid;
+    place-content: center;
+    height: 100dvh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 300px;
+}
+
+.container input {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.container button {
+    padding-block: 8px;
+}
+
+.imagem {
+    background-image: var(--bg-image);
+}
