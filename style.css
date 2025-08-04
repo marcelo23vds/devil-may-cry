@@ -5,7 +5,7 @@
 }
 
 :root {
-    --bg-image: url();
+    --bg-image: url(./img/dmc.jpg);
 }
 
 body {
