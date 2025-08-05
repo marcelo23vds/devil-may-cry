@@ -5,7 +5,7 @@
 }
 
 :root {
-    --bg-image: url(./img/dmc.jpg);
+    --bg-image: url(./img/Dante.jpg);
 }
 
 body {
@@ -32,4 +32,6 @@ body {
 
 .imagem {
     background-image: var(--bg-image);
+    background-size: cover;
+    transition: 3s;
 }
