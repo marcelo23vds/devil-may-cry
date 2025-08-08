@@ -19,6 +19,7 @@ body {
     flex-direction: column;
     gap: 16px;
     width: 300px;
+    margin-right: 110dvh;
 }
 
 .container input {
@@ -33,5 +34,5 @@ body {
 .imagem {
     background-image: var(--bg-image);
     background-size: cover;
-    transition: 3s;
+    transition: 1.7s;
 }
