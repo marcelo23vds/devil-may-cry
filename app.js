@@ -4,11 +4,11 @@ const botaoTrocarImagem = document.getElementById('trocar-imagem')
 const botaoAutomatico = document.getElementById('automatico')
 
 function trocarImagem(){
-    const imagem = document.getElementById('imagem').value
+    let imagem = document.getElementById('imagem').value
 
     //condição para evitar da tela remover as imagens de fundo, caso não seja selecionada uma valida, vai para a primeira
-    if (imagem == ''){
-        imagem = 1
+    if (imagem == '' || imagem > 6 || imagem < 1 || isNaN(imagem)){
+        //caso não seja um numero de 1 a 6, então se mantem da forma que está, sem alterar
     } else {
         document.documentElement.style.setProperty('--bg-image', `url(./img/${imagem}.jpg)`)
     }
