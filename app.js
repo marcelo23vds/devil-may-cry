@@ -16,7 +16,7 @@ function trocarImagem(){
 
 function automatico() {
     let contador = 1
-    
+
     //função para intervalo de tempo para trocar as imagens, deixando alinhado com o tempo de transição no css
     setInterval(function() {
 
@@ -28,7 +28,7 @@ function automatico() {
             contador = 1
         }
 
-    }, 2000) // troca a cada 2 segundos
+    }, 3000) // troca a cada 2 segundos
 }
 
 botaoTrocarImagem.addEventListener('click', trocarImagem)
