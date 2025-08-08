@@ -32,7 +32,7 @@ function automatico() {
     preCarregarImagens(6);
 
     //função para intervalo de tempo para trocar as imagens, deixando alinhado com o tempo de transição no css
-    intervalo(function() {
+    setInterval(function() {
 
         document.documentElement.style.setProperty('--bg-image', `url(./img/${contador}.jpg)`)
         contador++

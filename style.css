@@ -29,6 +29,17 @@ body {
 
 .container button {
     padding-block: 8px;
+    cursor: pointer;
+}
+
+.container button:hover {
+  transform: scale(1.05);
+  transition: 1s;
+}
+
+.container button:active {
+  transform: scale(0.95);
+  transition: 1s;
 }
 
 .imagem {
