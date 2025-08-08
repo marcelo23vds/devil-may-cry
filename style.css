@@ -45,5 +45,5 @@ body {
 .imagem {
     background-image: var(--bg-image);
     background-size: cover;
-    transition: 3s;
+    transition: 1.5s;
 }

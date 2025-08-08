@@ -3,6 +3,14 @@
 const botaoTrocarImagem = document.getElementById('trocar-imagem')
 const botaoAutomatico = document.getElementById('automatico')
 
+// carregar as imagens antes de utilizar para evitar a tela branca piscando
+function preCarregarImagens(total) {
+    for (let contador = 1; contador < total; contador++) {
+        const imagem = new Image();
+        imagem.src = `./img/${contador}.jpg`;
+    }
+}
+
 function trocarImagem(){
     let imagem = document.getElementById('imagem').value
 
@@ -17,7 +25,9 @@ function trocarImagem(){
 function automatico() {
     let contador = 1
 
-    //função para intervalo de tempo para trocar as imagens, deixando alinhado com o tempo de transição no css
+    preCarregarImagens(6)
+
+    //função com intervalo de tempo para trocar as imagens
     setInterval(function() {
 
         document.documentElement.style.setProperty('--bg-image', `url(./img/${contador}.jpg)`)
@@ -28,7 +38,7 @@ function automatico() {
             contador = 1
         }
 
-    }, 3000) // troca a cada 2 segundos
+    }, 2000) // troca a cada 2 segundos
 }
 
 botaoTrocarImagem.addEventListener('click', trocarImagem)
