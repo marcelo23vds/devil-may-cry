@@ -5,9 +5,10 @@ const botaoAutomatico = document.getElementById('automatico')
 
 // carregar as imagens antes de utilizar para evitar a tela branca piscando
 function preCarregarImagens(total) {
-    for (let contador = 1; contador < total; contador++) {
+    for (let contador = 1; contador <= total; contador++) {
         const imagem = new Image();
         imagem.src = `./img/${contador}.jpg`;
+        console.log(imagem)
     }
 }
 
@@ -23,6 +24,10 @@ function trocarImagem(){
 }
 
 function automatico() {
+
+    //let botaoParar = document.getElementById('automatico')
+    //botaoParar.value = 'Parar'
+
     let contador = 1
 
     preCarregarImagens(6)
