@@ -8,7 +8,6 @@ function preCarregarImagens(total) {
     for (let contador = 1; contador <= total; contador++) {
         const imagem = new Image();
         imagem.src = `./img/${contador}.jpg`;
-        console.log(imagem)
     }
 }
 
@@ -25,8 +24,13 @@ function trocarImagem(){
 
 function automatico() {
 
+    //trocar o nome do botao para PARAR, apos ele ser ativado o modo automatico
     //let botaoParar = document.getElementById('automatico')
-    //botaoParar.value = 'Parar'
+    //botaoParar.innerHTML = 'PARAR'
+
+    if(botaoAutomatico.addEventListener('click', automatico)){
+        
+    }
 
     let contador = 1
 
